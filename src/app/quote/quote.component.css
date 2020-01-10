@@ -7,3 +7,7 @@
 .jumbotron h1 {
     font-size: 70px;
 }
+.description p {
+    text-align: center;
+    font-family: 'Cabin', sans-serif;   
+}
