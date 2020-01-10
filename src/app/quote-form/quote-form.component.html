@@ -1,18 +1,30 @@
 <div class="container-fluid">
     <h2 class="text-center">Add qoute</h2>
     <br>
-    <form>
+    <form #quoteForm = 'ngForm'>
         <div class="form-group">
             <label for="quote">Qoute:</label>
-            <textarea class="form-control" id="quote" rows="4" required></textarea>
+            <textarea class="form-control" id="quote" rows="4" [(ngModel)]="newQuote.quote"
+            name="quote" #quote="ngModel" required></textarea>
+            <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+                <p>Quote is required</p>
+            </div>
         </div>
         <div class="form-group">
             <label for="author">Author:</label>
-            <input type="text" id="author" class="form-control" required>
+            <input type="text" id="author" class="form-control" [(ngModel)]="newQuote.author" 
+            name="author" #name="ngModel" required>
+            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+                <p>Name of Author is required</p>
+            </div>
         </div>
         <div class="form-group">
             <label for="name">Name of person submitting:</label>
-            <input type="text" class="form-control" id="name" required>
+            <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name"
+            name="name" #name="ngModel" required>
+            <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                <p>Name of person submitting is required</p>
+            </div>
         </div>
         <button type="submit" class="btn bg-primary">Submit quote</button>
     </form>
