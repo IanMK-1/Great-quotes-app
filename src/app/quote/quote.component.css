@@ -1,0 +1,9 @@
+.jumbotron {
+    font-family: 'Modak', cursive;
+    background-color: darkmagenta;
+    color: white;
+    text-align: center;
+}
+.jumbotron h1 {
+    font-size: 70px;
+}
