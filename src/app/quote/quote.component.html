@@ -47,6 +47,7 @@
                         <br>
                     </div>
                     <br>
+                    <p style="color: blue;">Posted: {{quote.completeDate|timeAgo}}</p>
                     <div>
                         <app-quote-feed [quote]='quote' (isRead) = 'deleteQuote($event,i)'></app-quote-feed>
                     </div>
