@@ -4,6 +4,8 @@
 
 #### The Great Quotes App is a web application that allows a user to enter a quote, the author and the name of person submitting the quote. The quote is submitted and can be voted upon or even deleted.
 
+![Birthday-date-App](/home/ian/Documents/angularIp1/Great-quote/src/assets/images/Screenshot_2020-01-12 GreatQuote.png)
+
 ## Setup/Installation Requirements
 - You will need either a computer or phone that can access the internet.
 - Then you will click on the link below to go to website.
