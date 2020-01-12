@@ -44,13 +44,14 @@
                         {{quote.quote}}
                         <br><br>
                         <div style="color: blue;">Author:&nbsp; {{quote.author}}&nbsp;&nbsp;&emsp;Name of person who submitted:&nbsp;&nbsp;{{quote.name}}</div>
+                        <br>
+                        
                     </div>
                     <br>
                     <div>
                         <app-quote-feed [quote]='quote' (isRead) = 'deleteQuote($event,i)'></app-quote-feed>
                     </div>
-                <br> 
-                
+                <br>           
             </div>
         </div>
         <div class="col-md-3">
