@@ -45,8 +45,12 @@
                         <br><br>
                         <div style="color: blue;">Author:&nbsp; {{quote.author}}&nbsp;&nbsp;&emsp;Name of person who submitted:&nbsp;&nbsp;{{quote.name}}</div>
                     </div>
-                    <app-goal-detail [quote]='quote' (isread) = 'deleteQuote($event,i)'></app-goal-detail>
+                    <br>
+                    <div>
+                        <app-quote-feed [quote]='quote' (isRead) = 'deleteQuote($event,i)'></app-quote-feed>
+                    </div>
                 <br> 
+                
             </div>
         </div>
         <div class="col-md-3">

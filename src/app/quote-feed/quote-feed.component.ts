@@ -11,7 +11,7 @@ export class QuoteFeedComponent implements OnInit {
   @Input() quote: Quote;
   @Output() isRead = new EventEmitter<boolean>();
 
-  quoteRead(read:boolean){
+  quoteDelete(read:boolean){
     this.isRead.emit(read);
   }
   constructor() { }
