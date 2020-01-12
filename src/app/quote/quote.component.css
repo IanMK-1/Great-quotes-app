@@ -11,3 +11,13 @@
     text-align: center;
     font-family: 'Cabin', sans-serif;   
 }
+.description h2 {
+    text-align: center;
+    font-family: 'Cabin', sans-serif;   
+}
+.card-body {
+    background-color: lightgrey;
+}
+.col-md-6 {
+    font-family: 'Cabin', sans-serif; 
+}

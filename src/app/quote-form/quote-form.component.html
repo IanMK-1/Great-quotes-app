@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <h2 class="text-center">Add qoute</h2>
     <br>
-    <form #quoteForm = "ngForm">
+    <form (ngSubmit)="submitGoal()" #quoteForm = "ngForm">
         <div class="form-group">
             <label for="quote">Qoute:</label>
             <textarea class="form-control" id="quote" rows="4" [(ngModel)]="newQuote.quote"
@@ -29,3 +29,4 @@
         <button type="submit" class="btn bg-primary">Submit quote</button>
     </form>
 </div>
+<br>

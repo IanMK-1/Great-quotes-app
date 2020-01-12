@@ -10,6 +10,7 @@
         <div class="col-md-12">
             <div class="card-body">
                 <div class="description">
+                    <h2>About</h2>
                     <p>The Great Quotes App is a web application that allows a user to
                         add a quote that the user either thought of or got from someone else i.e. 
                         An author. The user posts the quote which can be read and voted upon by others or can 
@@ -20,11 +21,36 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6">
-            <app-quote-form></app-quote-form>
+        <div class="col-md-3">
+
         </div>
         <div class="col-md-6">
+            <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
             
+        </div>
+        <div class="col-md-3">
+
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-6">
+            <h3 style="text-align:center">Quote Feed</h3>
+                <div *ngFor ='let quote of quotes;let i = index'>
+                    <div class="card-body">
+                        {{quote.quote}}
+                        <br><br>
+                        <div style="color: blue;">Author:&nbsp; {{quote.author}}&nbsp;&nbsp;&emsp;Name of person who submitted:&nbsp;&nbsp;{{quote.name}}</div>
+                    </div>
+                    <app-goal-detail [quote]='quote' (isread) = 'deleteQuote($event,i)'></app-goal-detail>
+                <br> 
+            </div>
+        </div>
+        <div class="col-md-3">
+
         </div>
     </div>
 </div>
