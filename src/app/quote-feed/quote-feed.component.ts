@@ -14,6 +14,14 @@ export class QuoteFeedComponent implements OnInit {
   quoteDelete(read:boolean){
     this.isRead.emit(read);
   }
+  numberoflikes : number=0
+  numberofdislikes : number=0
+  upVote(){
+    this.numberoflikes++;
+  }
+  downVote(){
+    this.numberofdislikes++;
+  }
   constructor() { }
 
   ngOnInit() {

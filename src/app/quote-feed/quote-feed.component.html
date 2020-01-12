@@ -1,2 +1,9 @@
 <p style="color: blue;">Posted: {{quote.completeDate|timeAgo}}</p>
+<div>
+    <span><button (click)=upVote() class="btn btn-success">Upvote<i class="fa fa-thumbs-up" aria-hidden="true"></i></button></span>
+    <span>&nbsp;{{numberoflikes}}&nbsp;</span>
+    <span><button (click)=downVote() class="btn btn-warning">Downvote<i class="fa fa-thumbs-down" aria-hidden="true"></i></button></span>
+    <span>&nbsp; {{numberofdislikes}}</span><br><br>       
+</div>
+
 <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete</button>
